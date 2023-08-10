@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PopCorn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="images/images5.jpg" type="images/png">
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+  <script>
+    jQuery(function($){
+      var $navbar = $('.header');
+      $(window).scroll(function(event){
+        var $current = $(this).scrollTop();
+        if( $current >0 ){
+          $navbar.addClass('navbar-color');
+
+        } else{
+          $navbar.removeClass('navbar-color');
+        }
+      });
+    });
+  </script>
+</head>
+
+
+<body>
+
+<header class="header">
+    <a class="logo" href="#">CRUMBLES</a>
+    <div class="menu-toggle">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html">ABOUT</a></li>
+          <li><a href="index.html">MENU</a></li>
+          <li><a href="index.html">ORDER</a></li>
+          <li><a href="index.html">LOCATION</a></li>
+        </ul>
+      </nav>
+    </div>    
+</header>
+
+   
+    <div class="comment">
+      <p class="comment1"><i>Best PopCorn Since 2023</i></p>
+      <p class="comment2">MADE WITH FRESH & PREMIUM INGREDIENTS EVERYDAY</p>
+      <button class="seemenuhere" onclick="window.location.href='menu.html'">SEE MENU HERE</button>
+    </div>
+
+
+<!-- 
+    <div class="container">
+      <div class="title-section">
+        <h1>&mdash; MENU &mdash;</h1>
+      </div>
+      <div class="start">     
+          <div class="item">
+            <div class="menu-post">
+              <div class="menu-img-div">
+                <img src="images/pop3.jpeg" alt="">
+              </div>
+              <div class="menu-post-content">
+                <h2>CARAMEL POPCORN</h2>
+                <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+                <span class="price">&#8358;1500</span>
+              </div>
+            </div>
+            <div class="menu-post right-image">
+              <div class="menu-img-div">
+               <img src="images/pop3.jpeg" alt="">
+              </div>
+              <div class="menu-post-content">
+                <h2>MUSHROOM POPCORN</h2>
+                <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+                <span class="price">&#8358;1800</span>
+              </div> 
+            </div>
+          </div>
+        
+          <div class="item">
+            <div class="menu-post">
+              <div class="menu-post-content">
+                <h2>SNOWFLAKE POPCORN</h2>
+                <p><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+                <span class="price">&#8358;2500</span>
+              </div>
+              <div class="menu-img-div">
+                <img src="images/pop3.jpeg" alt="">
+               </div>          
+            </div>
+            <div class="menu-post right-image">
+              <div class="menu-post-content">
+                <h2>BUTTERFLY POPCORN</h2>
+                <p><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+                <span class="price">&#8358;2000</span>
+              </div> 
+              <div class="menu-img-div">
+                <img src="images/pop3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+ -->
+
+
+
+  <div class="container2">
+      <div class="title-section2">
+        <h1>&mdash; MENU &mdash;</h1>
+      </div>
+      <div class="start2">
+        <div class="mm1">
+          <img src="images/pop3.jpeg" alt="">
+        </div>
+        <div class="mm2">
+          <h2>CARAMELLE POPCORN</h2>
+          <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+          <span class="price">&#8358;1500</span>
+        </div>
+        <div class="mm1">
+          <img src="images/pop3.jpeg" alt="">
+        </div>
+        <div class="mm2">
+          <h2>MUSHROOM POPCORN</h2>
+          <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+          <span class="price">&#8358;1800</span>
+        </div>   
+      </div>
+      
+      <div class="start2">
+        <div class="mm2">
+          <h2>SNOWFLAKE POPCORN</h2>
+          <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+          <span class="price">&#8358;2500</span>
+        </div>
+        <div class="mm1">
+          <img src="images/pop3.jpeg" alt="">
+        </div>
+        <div class="mm2">
+          <h2>BUTTERFLY POPCORN</h2>
+          <p class="text"><i>A Mouth-Watering Vanilla Flavour Popcorn, Full of Sweetness</i></p>
+          <span class="price">&#8358;2000</span>
+        </div>   
+        <div class="mm1">
+          <img src="images/pop3.jpeg" alt="">
+        </div>
+      </div>
+  </div>
+
+
+  <div class="reserve">
+    <p class="reservetext"><i>Reservation</i></p>
+    <p class="time">OPENING HOURS 8:00AM - 8:00PM, EVERY DAY ON WEEK</p>
+    <button class="ordernow" onclick="window.location.href='order.html'">ORDER NOW</button>
+  </div>
+
+
+
+  <div class="contact-div">
+    <div class="divmain">
+      <p class="cont">&mdash; CONTACT WITH US &mdash;</p>
+      <form class="form" action="">
+        <div class="div">
+          <div >
+            <input class="div2" type="text" name="text" id="name" placeholder="name*">
+            <input class="div3" type="email" name="email" id="email" placeholder="email*">
+          </div> <br>
+          <div class="div">
+            <input class="div2" type="text" name="text" id="subject" placeholder="subject*">
+            <input class="div3" type="website" name="text" id="website" placeholder="website*">
+          </div> <br>
+        </div> <br>
+
+        <div>
+          <textarea class="textarea" name="textarea" id="textarea" cols="80" rows="8" placeholder="message*"></textarea>
+        </div> <br>
+        <div class="div4">
+          <button class="messagebutton">SEND MESSAGE</button>
+        </div>
+        <div id="msg" class="message alert">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+ <div class="contactinfo">
+    <div class="located">
+      <div class="locationicon">
+        <img class="locateicon" src="images/location icon.png" alt="">
+      </div>
+      <div class="locationicontext">
+        <h2 class="locate">OUR LOCATION</h2>
+        <p class="locatetext"><b><i>FUT Minna Gk Campus <br> Minna, Niger State</i></b> </p>
+      </div>
+    </div>
+    <div class="located">
+      <div class="locationicon">
+        <img class="locateicon" src="images/phone icon.png" alt="">
+      </div>
+      <div class="locationicontext">
+        <h2 class="locate">OUR PHONE</h2>
+        <p class="locatetext"><b><i>+234 906 562 2158 <br> +234 907 757 6885</i></b> </p>
+      </div>
+    </div>
+    <div class="located">
+      <div class="locationicon">
+        <img class="locateicon" src="images/mail icon.png" alt="">
+      </div>
+      <div class="locationicontext">
+        <h2 class="locate">OUR MAIL</h2>
+        <p class="locatetext"><b><i>popcorn@gmail.com <br> sweetpopcorn@gmail.com</i></b> </p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<footer>
+  <div class="last-line">
+    <div class="next-line">
+      <p class="copyright">&copy; 2023 CRUMBLES. ALL RIGHTS RESERVES. TEMPLATE BY GROUP 8.</p>
+     </div>
+     <div class="footer-nav">
+       <ul class="footer-ul">
+          <li class="footer-li"><a href="#">FACEBOOK</a></li>
+          <li class="footer-li"><a href="#">TWITTER</a></li>
+          <li class="footer-li"><a href="#">PINTEREST</a></li>
+          <li class="footer-li"><a href="#">GOOGLE</a></li>
+          <li class="footer-li"><a href="#">INSTAGRAM</a></li>
+       </ul>
+     </div>
+  </div>
+</footer>
+</html>
